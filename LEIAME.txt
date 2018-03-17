@@ -1,0 +1,116 @@
+ufscThesis - Template LaTeX 
+----------------------------
+
+IMPORTANTE!!!
+
+LEIA ESTE DOCUMENTO ANTES DE TENTAR USAR O TEMPLATE!!!
+
+
+Sobre o ufscThesis
+------------------
+O ufscThesis � um template LaTeX para a elabora��o de trabalhos acad�micos
+no formato definido pela Biblioteca Universit�ria da Universidade Federal
+de Santa Catarina.
+
+O template foi criado a partir da necessidade identificada por parte
+dos p�s-graduandos usu�rios de LaTeX, que n�o contavam com classes de 
+documentos similares quanto � geometria das p�ginas.
+
+Os autores s�o Roberto Simoni e Carlos R Rocha, ambos p�s-graduandos em
+Engenharia Mec�nica da UFSC no momento em que a primeira vers�o do 
+template foi colocada para testes. Pequenas melhorias foram realizadas
+por Lu�s Fernando Arcaro, p�s-graduando em Eng. de Automa��o e Sistemas.
+
+Esta � uma vers�o inicial do template. Apesar de testado para a elabora��o
+de teses e ter pelo menos uma tese aprovada e disponibilizada na BU feita
+com o ufscThesis, entende-se que ainda � poss�vel aparecer situa��es em
+que o documento gerado apresente alguma discrep�ncia em rela��o � norma
+da BU/UFSC. Isso � normal para qualquer implementa��o inicial, e pede-se
+aos usu�rios que comuniquem � BU essas n�o conformidades
+quando e se aparecerem.
+
+Este template est� dispon�vel atrav�s de licen�a GPL. Para maiores
+informa��es, acesse http://www.gnu.org/licenses/gpl.html
+
+
+Pr�-requisitos
+--------------
+Como a norma da BU/UFSC � baseada nas normas ABNT, o ufscThesis usa o 
+template ABNTeX como base, modificando-o onde a norma da BU/UFSC difere
+da ABNT.
+
+Isso significa que � necess�rio ter o ABNTeX instalado na sua distribui��o
+LaTeX. Informa��es e download do ABNTeX est�o dispon�veis no s�tio
+eletr�nico do projeto: http://www.abntex.net.br/
+
+A vers�o de ABNTeX sobre a qual o ufscThesis foi construida foi a 0.8.2,
+considerada a �ltima est�vel. As vers�es mais atuais do ABNTeX n�o
+funcionam corretamente com o ufscThesis, motivo pelo qual a vers�o 0.8.2
+(assim como instru��es para instala��o) pode ser encontrada anexa (no
+diret�rio "abntex").
+
+O ufscThesis foi testado nas distribui��es de LaTeX texlive (linux) e
+MiKTeX (windows).
+
+Instala��o e Uso
+----------------
+Para utilizar o ufscThesis, basta descomprimi-lo em um diret�rio qualquer. O
+diret�rio em que ele foi descomprimido passar� a ser a pasta raiz do trabalho
+cient�fico que voc� redigir�.
+
+Voc� encontrar� 4 arquivos relevantes no ufscThesis:
+
+- exemplo.tex : exemplo de uso do ufscThesis. Voc� pode utilizar ele como
+                base do seu trabalho cient�fico, apagando o texto presente
+                dentro do documento, mas aproveitando as suas defini��es.
+- ufscThesis.cls : Esta � a classe de documento que define a formata��o e o
+                   comportamento do ufscThesis. Voc� n�o deve alterar este
+                   arquivo a n�o ser que conhe�a como elaborar classes de 
+                   documento no LaTeX.
+- BUUFSCThesis.sty : Arquivo de estilo que cont�m os textos usados para gerar
+                     os elementos pr�-textuais, principalmente. Evite alterar
+                     este arquivo, a n�o ser que n�o exista outra maneira de
+                     gerar o elemento pr�-textual a partir dos comandos nos
+                     arquivos do seu trabalho cient�fico.
+- ufsc-alf.bst : Arquivo de formata��o de refer�ncias bibliogr�ficas. Este �
+                 uma adapta��o dos formatadores do ABNTeX, visando atualizar
+                 a classe de documento em rela��o � ABNT. N�o altere este
+                 arquivo a n�o ser que saiba trabalhar com este formatador de
+                 refer�ncias. Se conseguir aperfei�oa-lo, por favor, d� o
+                 devido retorno, para melhorarmos o template e disponibilizarmos
+                 � comunidade acad�mica.
+                 
+Como foi dito, basta descomprimir o arquivo .zip e come�ar a utilizar. Um
+exemplo de uso consiste no arquivo exemplo.tex. Uma sugest�o para iniciar o
+seu trabalho � justamente copiar ou renomear este arquivo e sobrescrever o seu
+conte�do com a reda��o do seu trabalho cient�fico. H� v�rios coment�rios nesse
+arquivo detalhando o uso dos campos de defini��o de dados para os elementos 
+pr�-textuais e como ger�-los. Sugere-se que o usu�rio iniciante analise esses
+dados antes de come�ar a utilizar o ufscThesis.
+
+O texto do exemplo.tex foi retirado de um tutorial para elabora��o de trabalhos
+para o XX Congresso Internacional de Engenharia Mec�nica, que ocorreu em 2009 na
+cidade de Gramado(RS). O texto n�o cont�m nenhuma informa��o relevante para o
+template em si, servindo apenas para verificar se a formata��o gerada pelo
+ufscThesis est� de acordo com as normas da BU/UFSC.
+
+Coment�rios Finais
+------------------
+Este template foi elaborado para utiliza��o livre de toda a comunidade acad�mica
+da UFSC e outros interessados. Os usu�rios podem copiar, estudar, analisar, 
+modificar e repassar as altera��es para os demais usu�rios, desde que mantenham
+os cr�ditos dos autores da vers�o original, conforme diz a licen�a GPL.
+
+Reiteramos que � poss�vel que apare�am alguns problemas decorrentes de situa��es
+n�o testadas na elabora��o de trabalhos acad�micos. Se este for o caso, por favor
+comunique. Se conseguir solucionar um problema encontrado, repasse para os
+autores, para que possa ser sanado em atualiza��es do template e assim beneficie
+os demais usu�rios.
+
+Os autores deste template o fizeram por necessidade pr�pria de reda��o de suas
+teses. A disponibiliza��o para a comunidade acad�mica foi feita no sentido de 
+colabora��o. Atualiza��es ser�o feitas de acordo com o tempo dispon�vel dos
+autores ou seus associados para trabalhar no template. Isso posto, espera-se 
+que os usu�rios entendam que n�o ser�o fornecidos atendimentos personalizados,
+n�o ser�o respondidas d�vidas sobre o uso de LaTeX ou outros assuntos que n�o
+estejam diretamente relacionados com o template ufscThesis.
