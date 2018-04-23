@@ -431,8 +431,6 @@
   \ifthenelse{\equal{\ABNTEXisarticle}{true}}{%
     \pagestyle{plain}%
   }{%else  
-    \pagestyle{abntheadings}%
-    \aliaspagestyle{chapter}{abntchapfirst}% customizing chapter pagestyle
   }  
   \nouppercaseheads%
   \bookmarksetup{startatroot}% 

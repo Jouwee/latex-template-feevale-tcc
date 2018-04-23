@@ -1,9 +1,7 @@
-
 \documentclass[
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
-	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
-	twoside,			% para impressão em verso e anverso. Oposto a oneside
+	oneside,			% para impressão em verso e anverso. Oposto a oneside
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
@@ -33,6 +31,7 @@
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
+\usepackage[labelfont=bf,textfont=md]{caption}
 % ---
 		
 % ---
@@ -89,6 +88,7 @@
 
 % alterando o aspecto da cor azul
 \definecolor{blue}{RGB}{41,5,195}
+\definecolor{black}{RGB}{0,0,0}
 
 % informações do PDF
 \makeatletter
@@ -100,9 +100,9 @@
 	    pdfcreator={LaTeX with abnTeX2},
 		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
 		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=blue,          	% color of internal links
+    	linkcolor=black,          	% color of internal links
     	citecolor=blue,        		% color of links to bibliography
-    	filecolor=magenta,      		% color of file links
+    	filecolor=magenta,    		% color of file links
 		urlcolor=blue,
 		bookmarksdepth=4
 }
@@ -114,7 +114,7 @@
 % --- 
 
 % O tamanho do parágrafo é dado por:
-\setlength{\parindent}{1.3cm}
+\setlength{\parindent}{1.5cm}
 
 % Controle do espaçamento entre um parágrafo e outro:
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
@@ -251,6 +251,14 @@
 % ----------------------------------------------------------
 \chapter{Introdução}
 
+\begin{figure}[ht]
+\centering
+\label{fig:lenna}
+\caption{\textbf{Esta é a Lenna}}
+\includegraphics[width=0.5\textwidth]{imagens/Lenna.png}
+
+Fonte: Leader et al. (2003, p. 1228)
+\end{figure}
 
 \lipsum[3-56]
 
