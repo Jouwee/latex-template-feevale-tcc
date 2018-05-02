@@ -864,3 +864,12 @@
     \vspace*{\fill}
   \end{agradecimentos}
 }
+% Comandos para fonte de imagem
+\newcommand{\source}[1]{%
+
+Fonte: {#1}
+}
+
+\newcommand{\sourceAuthor}{\source{do autor}}
+
+\newcommand{\citet}{\citeonline}
