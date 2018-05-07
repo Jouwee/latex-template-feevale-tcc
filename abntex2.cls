@@ -859,7 +859,7 @@
     \hspace{.45\textwidth}
     \begin{minipage}{.5\textwidth}
   	   \SingleSpacing
-       \imprimirpreambulo
+       #1
     \end{minipage}%
     \vspace*{\fill}
   \end{agradecimentos}
