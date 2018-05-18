@@ -402,9 +402,8 @@
 % -----
 % Cabecalho padrao
 \makepagestyle{abntheadings}
-\makeevenhead{abntheadings}{\ABNTEXfontereduzida\thepage}{}{\ABNTEXfontereduzida\textit\leftmark}
-\makeoddhead{abntheadings}{\ABNTEXfontereduzida\textit\rightmark}{}{\ABNTEXfontereduzida\thepage}
-\makeheadrule{abntheadings}{\textwidth}{\normalrulethickness}
+\makeevenhead{abntheadings}{\ABNTEXfontereduzida\thepage}{}{}
+\makeoddhead{abntheadings}{}{}{\ABNTEXfontereduzida\thepage}
 
 % Cabecalho do inicio do capitulo
 \makepagestyle{abntchapfirst}
@@ -431,6 +430,7 @@
   \ifthenelse{\equal{\ABNTEXisarticle}{true}}{%
     \pagestyle{plain}%
   }{%else  
+   \pagestyle{abntheadings}%
   }  
   \nouppercaseheads%
   \bookmarksetup{startatroot}% 
