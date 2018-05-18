@@ -852,14 +852,13 @@
 \newcommand{\imprimiragradecimento}[1]{%
   \begin{agradecimentos}%
     \center
-    \vspace*{\fill}
-
     {\center\ABNTEXchapterfont\Large\agradecimentosname}
     
+    \vspace*{\fill}
     \hspace{.45\textwidth}
     \begin{minipage}{.5\textwidth}
   	   \SingleSpacing
-       #1
+       {#1}
     \end{minipage}%
     \vspace*{\fill}
   \end{agradecimentos}
