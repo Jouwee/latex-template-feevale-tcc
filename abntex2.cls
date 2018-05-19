@@ -46,8 +46,8 @@
 \newboolean{ABNTEXuppersection}     %true=titles of sections in uppercase
 \newboolean{ABNTEXuppersubsection}  %true=titles of subsections in uppercase
 \newboolean{ABNTEXuppersubsubsection}  %true=titles of subsubsections in uppercase
-\setboolean{ABNTEXupperchapter}{false}
-\setboolean{ABNTEXuppersection}{false}
+\setboolean{ABNTEXupperchapter}{true}
+\setboolean{ABNTEXuppersection}{true}
 \setboolean{ABNTEXuppersubsection}{false}
 \setboolean{ABNTEXuppersubsubsection}{false}
 \DeclareOption{chapter=TITLE}{\setboolean{ABNTEXupperchapter}{true}}
@@ -209,19 +209,19 @@
 
 % ---
 % Fontes padroes de part, chapter, section, subsection e subsubsection
-\newcommand{\ABNTEXchapterfont}{\sffamily}
-\newcommand{\ABNTEXchapterfontsize}{\Huge}
+\newcommand{\ABNTEXchapterfont}{\rmfamily\fontseries{b}\selectfont}
+\newcommand{\ABNTEXchapterfontsize}{\normalsize}
 
 \newcommand{\ABNTEXpartfont}{\ABNTEXchapterfont}
-\newcommand{\ABNTEXpartfontsize}{\ABNTEXchapterfontsize}
+\newcommand{\ABNTEXpartfontsize}{\normalsize}
 
-\newcommand{\ABNTEXsectionfont}{\ABNTEXchapterfont}
-\newcommand{\ABNTEXsectionfontsize}{\Large}
+\newcommand{\ABNTEXsectionfont}{\rmfamily}
+\newcommand{\ABNTEXsectionfontsize}{\normalsize}
 
-\newcommand{\ABNTEXsubsectionfont}{\ABNTEXsectionfont}
-\newcommand{\ABNTEXsubsectionfontsize}{\large}
+\newcommand{\ABNTEXsubsectionfont}{\rmfamily\fontseries{b}\selectfont}
+\newcommand{\ABNTEXsubsectionfontsize}{\normalsize}
 
-\newcommand{\ABNTEXsubsubsectionfont}{\ABNTEXsubsectionfont}
+\newcommand{\ABNTEXsubsubsectionfont}{\rmfamily}
 \newcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
 % ---
 
@@ -343,10 +343,10 @@
   % tamanhos de fontes de chapter e part	
    \ifthenelse{\equal{\ABNTEXisarticle}{true}}{%
      \setlength\beforechapskip{\baselineskip}
-     \renewcommand{\chaptitlefont}{\ABNTEXsectionfont\ABNTEXsectionfontsize}
+     \renewcommand{\chaptitlefont}{ \ABNTEXchapterfont }
    }{%else
      \setlength{\beforechapskip}{0pt}
-     \renewcommand{\chaptitlefont}{\ABNTEXchapterfont\ABNTEXchapterfontsize}
+     \renewcommand{\chaptitlefont}{ \ABNTEXchapterfont }
    }
   
   \renewcommand{\chapnumfont}{\chaptitlefont}
@@ -852,7 +852,7 @@
 \newcommand{\imprimiragradecimento}[1]{%
   \begin{agradecimentos}%
     \center
-    {\center\ABNTEXchapterfont\Large\agradecimentosname}
+    {\center\ABNTEXchapterfont\agradecimentosname}
     
     \vspace*{\fill}
     \hspace{.45\textwidth}
@@ -865,10 +865,11 @@
 }
 % Comandos para fonte de imagem
 \newcommand{\source}[1]{%
+\footnotesize
 
 Fonte: {#1}
 }
 
-\newcommand{\sourceAuthor}{\source{do autor}}
+\newcommand{\sourceAuthor}{\source{elaborado pelo autor}}
 
 \newcommand{\citet}{\citeonline}
